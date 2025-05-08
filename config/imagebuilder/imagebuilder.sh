@@ -71,7 +71,7 @@ download_imagebuilder() {
 
     # Unzip and change the directory name
     ###tar -I zstd -xvf *-imagebuilder-*.tar.zst -C . && sync && rm -f *-imagebuilder-*.tar.zst
-    tar -zxvf *-imagebuilder-*.tar.xz -C . && sync && rm -f *-imagebuilder-*.tar.xz
+    tar -Jxvf *-imagebuilder-*.tar.xz -C . && sync && rm -f *-imagebuilder-*.tar.xz
     mv -f *-imagebuilder-* ${openwrt_dir}
 
     sync && sleep 3
